@@ -1,2 +1,4 @@
+.DS_Store
 mock/
+node_modules/
 package-lock.json
