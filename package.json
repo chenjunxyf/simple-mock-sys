@@ -1,0 +1,26 @@
+{
+  "name": "simple-mock-sys",
+  "version": "1.0.0",
+  "description": "简单mock系统",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenjunxyf/simple-mock-sys.git"
+  },
+  "keywords": [],
+  "author": "chenjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenjunxyf/simple-mock-sys/issues"
+  },
+  "homepage": "https://github.com/chenjunxyf/simple-mock-sys#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "fs-extra": "^5.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "urlparse": "0.0.1"
+  }
+}
