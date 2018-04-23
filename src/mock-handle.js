@@ -18,7 +18,6 @@ module.exports = async function (req, res, next) {
 
     filePath = filePath.replace(/(\/?)$/, '');
     mockPath = path.join(mockDir_ajax, filePath + '.tpl.js');
-    console.log(mockPath);
     fs_extra.ensureFileSync(mockPath);
     context = fs.readFileSync(mockPath, 'utf8');
 
