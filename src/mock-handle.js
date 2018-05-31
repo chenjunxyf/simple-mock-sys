@@ -11,6 +11,8 @@ module.exports = async function (req, res, next) {
     let filePath = req.path || '',
         mockPath,
         context;
+    
+    console.log(filePath);
 
     if (ifStaticFile(filePath)) {
         return res.json({ message: 'not support' });
@@ -42,7 +44,7 @@ module.exports = async function (req, res, next) {
 function ifStaticFile(type) {
     let imgRex = /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
         fontRex = /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        scriptRex = /\.(js|css|json)(\?.*)?$/;
+        scriptRex = /\.(js|css)(\?.*)?$/;
 
     return imgRex.test(type) || fontRex.test(type) || scriptRex.test(type);
 }
