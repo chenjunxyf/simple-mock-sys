@@ -2,7 +2,7 @@ var express = require('express');
 var returnData = require('./mock-handle.js');
 
 module.exports = function (port) {
-    const mockPort = this.port || 3000;
+    const mockPort = port || 3000;
     var app = express();
     app.use((req, res, next) => {
         console.log(req.path);
