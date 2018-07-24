@@ -30,3 +30,9 @@ module.exports = {
   }
 };
 ```
+
+## 注意
+
+`npm publish`
+
+`registery: https://registry.npmjs.org/`
